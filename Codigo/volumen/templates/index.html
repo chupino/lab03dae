@@ -1,0 +1,12 @@
+<h1>Calculo de volumen de un cilindro</h1>
+
+<form action="{% url 'calculo' %}" method="POST">
+    {% csrf_token %}
+    introduzca el diametro: 
+    <input type="number" step="0.01" name="diametro" /> <br>
+    Introduzca la altura:
+    <input type="number" step="0.01" name="altura" /> <br>
+    
+    <br>
+    <input type="submit" value="Calcular">
+</form>

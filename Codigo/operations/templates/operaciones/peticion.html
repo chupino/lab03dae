@@ -1,0 +1,17 @@
+<h1>Ingreso de datos</h1>
+<form action="{% url 'respuesta' %}" method="post">
+    {% csrf_token %}
+    Ingrese el 1er numero
+    <input type="number" step="1" name="num1" /> <br>
+    Ingrese el 2do numero
+    <input type="number" step="1" name="num2" /> <br>
+
+    Qué tipo de operación desea:
+    <select name="operacion">
+        <option value="suma">Suma</option>
+        <option value="resta">Resta</option>
+        <option value="multiplicacion">Multiplicacion</option>
+    </select>
+    <br>
+    <input type="submit">
+</form>
